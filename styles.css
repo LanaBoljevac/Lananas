@@ -7,9 +7,7 @@
     font-family:'Inter', sans-serif;
     font-weight:700 ;
     font-size: 48px;  
-    font-style: normal;
-
-}
+    font-style: normal;}
 
 p {
     color: blue;
@@ -17,5 +15,42 @@ p {
     font-family:'Inter', sans-serif;
     font-weight:400 ;
     font-size: 20px;  
-    font-style: normal;
-}
+    font-style: normal;}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: blue;
+  background-color: blanchedalmond;}
+
+ul, ol {
+    margin-left: 40px;
+    padding: 10px;}
+
+ul li {
+    list-style: square;}
+
+ol li {
+    list-style: decimal;}
+
+section {
+    margin-bottom: 40px;}
+
+.note {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: blue;
+    text-align: center;}
+
+aside {
+    float: right;
+    width: 30%;
+    background-color: #fff3cd;
+    padding: 10px 15px;
+    border-left: 4px solid #f0ad4e;
+    display: block;}
+
+.highlight {
+    color: red;
+    font-weight: bold;}
+
+

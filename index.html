@@ -6,7 +6,6 @@
     <title>Lananas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <h1 class="test">Lananas početak...</h1>
     <p id="p1"> Ja sam <strong>Lana</strong> farmaceutska tehničarka i studentica <em>grafičkog dizajna</em> koja pokušava natjerati 
@@ -32,6 +31,79 @@
 <aside>
 <p><strong>Lananas error:</strong> system overloaded. Please reboot creativity.</p></aside>
 
-</body>
 
+<form action="mailto:lanaboljevac01@gmail.com" method="post" enctype="text/plain" accept-charset="UTF-8">
+
+<fieldset>
+<legend><b>Obavezni podaci:</b></legend>
+<label for="ime">Ime:</label>
+<input type="text" id="ime" name="ime" size="30"><br>
+<label for="prezime">Prezime:</label>
+<input type="text" id="prezime" name="prezime" size="30"><br>
+E-mail: <input type="email" name="mail" size="30"><br><br>
+Datum rodenja: <input type="date" name="bday"><br>
+Odaberite vrijeme: <input type="time" name="vrijeme"><br><br>
+
+<legend><b>Spol:</b></legend>
+<input type="radio" name="spol" value="zensko">Žensko<br>
+<input type="radio" name="spol" value="musko">Muško<br><br>
+
+<label>Poruka:</label>
+<input type="text" name="Poruka">
+
+</fieldset>
+
+<fieldset>
+<legend><b>Neobavezni izbor:</b></legend>
+
+Omiljena boja?
+<input type="color" name="boja" value="#8000FF"><br><br>
+
+ <label for="zanr">Odaberi svoj najdraži glazbeni žanr:</label><br><br>
+  <select id="zanr" name="zanr">
+    <option value="pop">Pop</option>
+    <option value="rock">Rock</option>
+    <option value="jazz">Jazz</option>
+    <option value="hiphop">Hip-hop</option>
+    <option value="elektronicka">Elektronička glazba</option>
+    <option value="klasicna">Klasična glazba</option>
+    <option value="metal">Metal</option>
+    <option value="indie">Indie</option>
+    <option value="rnb">R&B</option>
+    <option value="reggae">Reggae</option>
+  </select><br><br>
+
+<label for="horoskop">Upiši ili odaberi svoj horoskopski znak:</label>
+  <input list="horoskop" id="horoskopInput" name="horoskop" placeholder="npr. lav, ovan, ribe...">
+
+  <datalist id="horoskop">
+    <option value="Ovan">
+    <option value="Bik">
+    <option value="Blizanci">
+    <option value="Rak">
+    <option value="Lav">
+    <option value="Djevica">
+    <option value="Vaga">
+    <option value="Škorpion">
+    <option value="Strijelac">
+    <option value="Jarac">
+    <option value="Vodenjak">
+    <option value="Ribe">
+  </datalist><br><br>
+
+Kakvo je vrijeme danas?<br><br>
+
+  <input type="checkbox" name="vrijeme" value="suncano"> Sunčano<br>
+  <input type="checkbox" name="vrijeme" value="oblacno"> Oblačno<br>
+  <input type="checkbox" name="vrijeme" value="kisovito"> Kišovito<br>
+  <input type="checkbox" name="vrijeme" value="vjetrovito"> Vjetrovito<br><br>
+
+ <input type="reset" value="Poništi">
+ <button type="submit">Pošalji podatke</button>
+
+</fieldset>
+</form>
+
+
+</body>
 </html>

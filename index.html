@@ -6,6 +6,7 @@
     <title>Lananas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <h1 class="test">Lananas početak...</h1>
     <p id="p1"> Ja sam <strong>Lana</strong> farmaceutska tehničarka i studentica <em>grafičkog dizajna</em> koja pokušava natjerati 
@@ -19,11 +20,64 @@
             <li>novi fen za kosu</li></ul>
 
     <h2>Popis knjiga za Interliber 2025. (po prioritetu)</h2>
-        <ol><li>The Road, Paul McCartney</li>
-            <li>Slautherhouse 5, Kurt Vennegut</li>
-            <li>Putovanje zvano igra, Marko Babić </li>
-            <li>Der Nachbar, Seastian Fitzek</li>
-            <li>The Glass Bead Game, Hermann Hesse</li></ol>
+        <ol>
+          <li class="cross">The Road, Paul McCartney</li>
+          <li class="cross">Slautherhouse 5, Kurt Vennegut</li>
+          <li class="cross">Putovanje zvano igra, Marko Babić </li>
+          <li>Der Nachbar, Seastian Fitzek <span class="highlight"> 404 - not found </span> </li>
+          <li>The Glass Bead Game, Hermann Hesse <span class="highlight"> 404 - not found </span></li></ol>
+
+<table id="interliber-table">
+    <thead>
+        <tr>
+            <th colspan="4" class="top-row">Troškovi Interlibera</th>
+        </tr>
+        <tr>
+            <th>Naziv knjige</th>
+            <th>Autor</th>
+            <th>Status</th>
+            <th>Trošak</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td><a href="https://znanje.hr/oznaka-proizvoda?searchBy=Autor&query=Cormac+McCarthy" target="_blank">
+            The Road </a></td>
+            <td>Cormac McCarthy</td>
+            <td>Kupljeno</td>
+            <td class="price">11,60€</td>
+        </tr>
+
+        <tr>
+            <td><a href="https://znanje.hr/product/slaughterhouse-5/251866" target="_blank">
+            Slaughterhouse 5 </a></td>
+            <td>Kurt Vonnegut</td>
+            <td>Kupljeno</td>
+            <td class="price">10,60€</td>
+        </tr>
+
+        <tr>
+            <td><a href="https://znanje.hr/product/putovanje-zvano-igra/472178" target="_blank">
+            Putovanje zvano igra </a></td>
+            <td>Marko Babić</td>
+            <td>Kupljeno</td>
+            <td class="price">19€</td>
+        </tr>
+
+        <tr>
+    <td>Der Nachbar</td>
+    <td>Sebastian Fitzek</td>
+    <td class="not-found" rowspan="2">404 Not Found</td>
+    <td class="price" rowspan="2">—</td>
+</tr>
+
+<tr>
+    <td>The Glass Bead Game</td>
+    <td>Hermann Hesse</td>
+</tr>
+    </tbody>
+</table>
 
 <p class="note">
     <sub>zlo</sub><sup>naopako</sup></p>

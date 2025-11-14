@@ -7,11 +7,11 @@
     font-weight:700 ;
     font-size: 48px;  
     font-style: normal;
-    text-align: center;}
+    text-align: center;
+    height: auto;}
 
 #p1 {
     color: blue;
-    background-color: blanchedalmond;
     font-family:'Inter', sans-serif;
     font-weight:400 ;
     font-size: 20px;  
@@ -21,7 +21,6 @@ body {
   font-family: 'Inter', sans-serif;
   color: blue;
   background: hsla(36, 100%, 90%, 0.8);/* umjesto naziva boje */} 
-
   
 ul, ol {
     margin-left: 40px;
@@ -32,6 +31,8 @@ ul li {
 
 ol li {
     list-style: decimal;}
+
+.cross { text-decoration: line-through; }
 
 section {
     margin-bottom: 40px;}
@@ -53,6 +54,48 @@ aside {
 .highlight {
   color: hsl(0, 100%, 50%); /* umjesto naziva boje */
   font-weight: bold;}
+
+#interliber-table {
+    width: 70%;
+    height: fit-content;
+    margin: 30px auto;
+    border-collapse: collapse;
+    font-family: 'Inter', sans-serif;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+
+#interliber-table thead th {
+    background-color: #ffe8c8;
+    padding: 12px;
+    font-size: 18px;
+    border-bottom: 2px solid #d9b58b;
+    text-align: center;}
+
+.top-row {
+    text-align: center;
+    font-weight: 700;
+    background-color: #ffe1b3;}
+
+#interliber-table tbody tr:nth-child(even) {
+    background-color: #fff7ed;}
+
+#interliber-table td, 
+#interliber-table th {
+    padding: 12px;
+    border-bottom: 1px solid #ecd7bf;}
+
+#interliber-table td:hover {
+    background-color: #f6e3c7;
+    transition: 0.3s;}
+
+.not-found {
+    color: #c0392b;
+    font-weight: bold;}
+
+.price {
+    text-align: right;
+    font-weight: 600;}
 
 
 fieldset {

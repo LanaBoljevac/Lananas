@@ -190,6 +190,7 @@ button[type="submit"] {
 
 
 .svg-embed {
-    width: 100%;
+    width: auto;
     height: auto;
     border: none;}
+

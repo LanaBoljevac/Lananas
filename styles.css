@@ -188,9 +188,9 @@ button[type="submit"] {
     height: auto;
     border-radius: 10px; }
 
-
 .svg-embed {
-    width: auto;
-    height: auto;
-    border: none;}
+   max-width: 100%;
+   height: auto;
+   border: none;}
+
 

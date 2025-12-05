@@ -170,8 +170,26 @@ button[type="submit"] {
     border: none;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);}
+
+     .float-right {
+    float: right;
+    width: 240px;     
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;}
     
+    .review {
+    font-size: 20;
+    line-height: 2;
+    text-align: left;}
+
     .preview {
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px; }
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; }
+
+
+.svg-embed {
+    width: 100%;
+    height: auto;
+    border: none;}

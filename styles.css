@@ -193,4 +193,10 @@ button[type="submit"] {
    height: auto;
    border: none;}
 
+img[usemap] {
+    display: block;
+    max-width: 100%;
+    height: auto;}
+
+
 

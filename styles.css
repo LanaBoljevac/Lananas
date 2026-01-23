@@ -381,3 +381,44 @@ input[type="reset"] {
   transform: scale(1.04) !important;
   transition: transform 0.3s ease;
 }
+
+/* 3D prostor */
+.scene {
+  perspective: 800px;
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+}
+
+/* Kocka */
+.cube {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  transform-style: preserve-3d;
+  animation: rotateCube 6s linear infinite;
+}
+
+/* Stranice kocke */
+.face {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: rgba(100, 120, 180, 0.7);
+  border: 1px solid rgba(255,255,255,0.4);
+  backface-visibility: hidden;
+}
+
+/* Pozicije stranica */
+.front  { transform: translateZ(60px); }
+.back   { transform: rotateY(180deg) translateZ(60px); }
+.right  { transform: rotateY(90deg) translateZ(60px); }
+.left   { transform: rotateY(-90deg) translateZ(60px); }
+.top    { transform: rotateX(90deg) translateZ(60px); }
+.bottom { transform: rotateX(-90deg) translateZ(60px); }
+
+/* Animacija */
+@keyframes rotateCube {
+  0%   { transform: rotateX(0deg) rotateY(0deg); }
+  100% { transform: rotateX(360deg) rotateY(360deg); }
+}
